@@ -37,7 +37,7 @@ class blob(dict):
 
   def add_material(cls,name:str,params:dict):
     """
-    Choose material to pass to your balls and nutsack
+    Choose material to pass to your uh, thingy
     see : https://mitsuba.readthedocs.io/en/stable/src/generated/plugins_bsdfs.html
     -
     now you can pass the name of your material when creating objects yeheahae
