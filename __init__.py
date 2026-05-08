@@ -38,4 +38,5 @@ try:
 except Exception as exc:
     mi.set_variant("llvm_ad_rgb")
 """
-from .src import render
+from .src.render import blob
+from .src.functs import *

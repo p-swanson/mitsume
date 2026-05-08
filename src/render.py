@@ -7,7 +7,14 @@ its just kind of annoying to deal with dictionaries so
 i made these to simplify
 """
 import mitsuba as mi
-
+#import mitsuba as mi
+###################################
+# setup variuant backend? is this smart?
+try:
+    mi.set_variant("cuda_ad_rgb")
+except Exception as exc:
+    mi.set_variant("llvm_ad_rgb")
+########################################
 class blob(dict):
   def __init__(self,integrator:str='path',max_depth:int=1):
     """
