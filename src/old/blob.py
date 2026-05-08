@@ -1,3 +1,11 @@
+"""
+49 43 58 43 20 4E 49 4B 41
+
+just a series of functions for interfacing with mitsuba.
+loading and manipulating objects according to mitsuba protocols
+its just kind of annoying to deal with dictionaries so
+i made these to simplify
+"""
 import mitsuba as mi
 class blob(dict):
   def __init__(self,integrator:str='path',max_depth:int=1):
